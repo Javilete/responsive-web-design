@@ -1,0 +1,320 @@
+/*COMMON*/
+body {
+	margin: 0;
+	/*background-image: url(background.jpg);*/
+    background-color: antiquewhite;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 100%;
+}
+
+#header h1 {
+	text-transform: uppercase;
+	color: black;
+}
+
+
+#nav h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    color: #111;
+}
+
+#main {
+	width: 100%;
+    background-color: #FFF;
+    float: left;
+}
+
+#aside {
+	background-color: #999;
+}
+
+#aside p{
+    color:white;
+}
+
+ul#menu {
+	border: 1px solid #000;
+	background-color: cadetblue;
+}
+#menu li {
+	text-align: center;
+	color: #fff;
+	border-bottom: 1px solid #216B9A;
+    text-decoration: none;
+}
+
+#menu li {
+	text-align: left;
+	list-style: none;
+}
+
+li a {
+	color: #FFF;
+}
+
+li a:hover, li a:hover {
+	color: #000;
+    font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+	color: #DA622E;
+}
+a:hover, a:focus {
+	color: #09F;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+section h2 {
+    color: #166BA1;
+}
+
+.boldTitle {
+    font-weight: bold;
+}
+
+#noColor{
+    background-color: #FFF;
+}
+
+td, th {
+    background-color: #EEEEEE;
+}
+
+article, aside, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+dl {
+    padding: 0em 1em;
+}
+
+#main dt {
+    background-color: #eee;
+    clear: left;
+}
+
+
+#main dd {
+    float: left;
+    width: 40%;
+}
+
+fieldset {
+    padding: 2em;
+}
+
+form label, form input, form select, form textarea {
+    display: block;
+    float: left;  
+    margin-bottom: 0.5em;
+}
+
+form input[type=text], form input[type=email], form textarea {
+    width: 100%;
+}
+
+form label {
+    width: 100%;    
+}
+
+form .dateMonth {
+    width: 40%;
+    
+}
+
+form .dateDay, form .dateYear{
+    width: 30%;
+}
+
+form #message {
+    float: left;
+}
+
+#promo {
+    float: left;
+    width: 100%;
+}
+
+#linkHide {
+    float: right;
+} 
+
+/*END OF COMMON*/
+
+/*Mobile*/
+@media all and (max-width: 37em) {
+    body {
+        float:left;
+    }
+
+    nav, aside, main {
+        margin: 0 0.5em;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    /*Responsive navigation*/
+    .nav h2 {
+        display:none;
+    }
+
+    .nav {
+		position: relative;
+		min-height: 40px;
+	}	
+	.nav ul {
+        margin-bottom: 1em;
+		width: 100%;
+		padding: 5px 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: solid 1px #aaa;
+		background: #fff url(images/icon-menu.png) no-repeat 10px 11px;
+		border-radius: 5px;
+		box-shadow: 0 1px 2px rgba(0,0,0,.3);
+	}
+	.nav li {
+		display: none; /* hide all <li> items */
+		margin: 0;
+	}
+	.nav .current {
+		display: block; /* show only current <li> item */
+	}
+	.nav a {
+		display: block;
+		padding: 5px 5px 5px 32px;
+		text-align: left;
+	}
+	.nav .current a {
+		background: none;
+		color: #FFF;
+        font-weight: bold;
+	}
+
+	/* on nav hover */
+	.nav ul:hover {
+		background-image: none;
+	}
+	.nav ul:hover li {
+		display: block;
+		margin: 0 0 5px;
+	}
+	.nav ul:hover .current {
+		background: url(images/icon-check.png) no-repeat 10px 7px;
+	}
+
+	/* right nav */
+	.nav.right ul {
+		left: auto;
+		right: 0;
+	}
+
+	/* center nav */
+	.nav.center ul {
+		left: 50%;
+		margin-left: -90px;
+	}
+
+    /*END OF RESPONSIVE NAVIGATIOIN*/
+
+}
+
+@media all and (max-width: 37em) and (orientation: landscape) {
+    body {
+        float:left;
+        margin: 0em 2em;
+    }
+
+    header {
+        text-align: center;
+    }
+
+}
+/* End Mobile*/
+
+/* Tablets*/
+@media all and (min-width: 37em) and (max-width: 50em){
+    body {
+        margin: 0 1em;
+    }
+    
+    header, nav, aside {
+        float: left;
+    }
+    
+    header {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav, aside {
+        width: 30%;
+    }
+
+    aside {
+        float: left;
+    }
+    
+    main {
+        width: 65%;
+        float: right;
+    }
+
+}
+
+@media all and (min-width: 37em) and (max-width: 50em) and (orientation: landscape){
+    header, nav, aside, main {
+        float: left;
+        margin: 0 2em;
+    }
+    
+    header {
+        width: 100%;
+    }
+
+    nav, aside {
+        width: 25%;
+        background-color:blue;
+    }
+    
+    main {
+        width: 50%
+    }
+
+}
+
+@media all and (min-width: 50em) {
+    
+    body {
+        margin: 0 2em;
+    }
+    
+     header, nav, aside, main {
+        float: left;
+    }
+    
+    header {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav, aside {
+        width: 25%;
+    }
+
+    main {
+        width: 45%;
+        margin:0 1em;
+    }
+}
