@@ -178,7 +178,7 @@ form #message {
 
     header {
         text-align: center;
-        background: antiquewhite url(./panoramica-400.jpg) right no-repeat;
+        background: antiquewhite url(./panoramica-400.jpg) center no-repeat;
     }
 
     /*Responsive navigation*/
@@ -189,6 +189,7 @@ form #message {
     .nav {
 		position: relative;
 		min-height: 40px;
+        margin-bottom: 1em;
 	}	
 	.nav ul {
         margin-bottom: 1em;
@@ -252,7 +253,7 @@ form #message {
 
     header {
         text-align: center;
-        background: antiquewhite url(./panoramica-200.jpg) center no-repeat;
+        background: antiquewhite url(./panoramica-400.jpg) center no-repeat;
     }
 
 }
@@ -302,7 +303,6 @@ form #message {
 
     nav, aside {
         width: 25%;
-        background-color:blue;
     }
     
     main {
