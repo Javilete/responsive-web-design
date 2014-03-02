@@ -1,7 +1,6 @@
 /*COMMON*/
 body {
 	margin: 0;
-	/*background-image: url(background.jpg);*/
     background-color: antiquewhite;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -11,7 +10,50 @@ body {
 
 #header h1 {
 	text-transform: uppercase;
-	color: black;
+	color: white;
+}
+
+ul#menu {
+    border: 1px solid #000;
+    background-color: cadetblue;
+}
+
+#menu li {
+    color: #fff;
+    border-bottom: 1px solid #216B9A;
+    text-decoration: none;
+}
+
+#menu li {
+    text-align: left;
+    list-style: none;
+}
+
+li a {
+    color: #FFF;
+}
+
+li a:hover {
+    color: #000;
+    font-weight: bold;
+}
+
+li a:active {
+    color: red;
+    font-weight: bold;
+}
+
+li a:focus:hover {
+    color: #DA622E;
+}
+
+li a:focus {
+    border: 1px solid red;
+}
+
+a {
+    text-decoration: none;
+    color: #DA622E;
 }
 
 
@@ -35,41 +77,15 @@ body {
     color:white;
 }
 
-ul#menu {
-	border: 1px solid #000;
-	background-color: cadetblue;
-}
-#menu li {
-	text-align: center;
-	color: #fff;
-	border-bottom: 1px solid #216B9A;
-    text-decoration: none;
-}
 
-#menu li {
-	text-align: left;
-	list-style: none;
-}
-
-li a {
-	color: #FFF;
-}
-
-li a:hover, li a:hover {
-	color: #000;
-    font-weight: bold;
-}
-
-a {
-	text-decoration: none;
-	color: #DA622E;
-}
-a:hover, a:focus {
-	color: #09F;
+/*Image fluid desing solution*/
+p img {
+    max-width: 100%;
 }
 
 h2 {
     font-weight: bold;
+    margin: 0;
 }
 
 section h2 {
@@ -84,9 +100,6 @@ section h2 {
     background-color: #FFF;
 }
 
-td, th {
-    background-color: #EEEEEE;
-}
 
 article, aside, footer, header, hgroup, main, nav, section {
     display: block;
@@ -111,6 +124,7 @@ fieldset {
     padding: 2em;
 }
 
+/*Form*/
 form label, form input, form select, form textarea {
     display: block;
     float: left;  
@@ -138,6 +152,9 @@ form #message {
     float: left;
 }
 
+/* End Form*/
+ 
+/*Promo*/
 #promo {
     float: left;
     width: 100%;
@@ -146,7 +163,7 @@ form #message {
 #linkHide {
     float: right;
 } 
-
+/*End Promo*/
 /*END OF COMMON*/
 
 /*Mobile*/
@@ -161,6 +178,7 @@ form #message {
 
     header {
         text-align: center;
+        background: antiquewhite url(./panoramica-400.jpg) right no-repeat;
     }
 
     /*Responsive navigation*/
@@ -180,7 +198,6 @@ form #message {
 		top: 0;
 		left: 0;
 		border: solid 1px #aaa;
-		background: #fff url(images/icon-menu.png) no-repeat 10px 11px;
 		border-radius: 5px;
 		box-shadow: 0 1px 2px rgba(0,0,0,.3);
 	}
@@ -210,9 +227,6 @@ form #message {
 		display: block;
 		margin: 0 0 5px;
 	}
-	.nav ul:hover .current {
-		background: url(images/icon-check.png) no-repeat 10px 7px;
-	}
 
 	/* right nav */
 	.nav.right ul {
@@ -238,6 +252,7 @@ form #message {
 
     header {
         text-align: center;
+        background: antiquewhite url(./panoramica-200.jpg) center no-repeat;
     }
 
 }
@@ -256,6 +271,7 @@ form #message {
     header {
         width: 100%;
         text-align: center;
+        background: antiquewhite url(./panoramica-600.jpg) center no-repeat;
     }
 
     nav, aside {
@@ -281,6 +297,7 @@ form #message {
     
     header {
         width: 100%;
+         background: antiquewhite url(./panoramica-600.jpg) center no-repeat;
     }
 
     nav, aside {
@@ -307,6 +324,7 @@ form #message {
     header {
         width: 100%;
         text-align: center;
+        background: antiquewhite url(./panoramica-800.jpg) center no-repeat;
     }
 
     nav, aside {

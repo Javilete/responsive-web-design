@@ -1,0 +1,8 @@
+#navdemo:hover a#menulink {
+   color: #D65710; 
+   line-height: 0; 
+   text-indent: 100%; 
+   white-space: nowrap; 
+   overflow: hidden;  
+   transition: line-height 3s;
+}

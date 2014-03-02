@@ -9,7 +9,7 @@
       "creationDate": 1393535308541
     },
     "sourceDirectory": "www",
-    "startFile": "index.html",
+    "startFile": "./index.html",
     "projectFiles": {},
     "projectDirectories": {},
     "libraries": [

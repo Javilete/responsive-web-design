@@ -1,92 +1,90 @@
 body {
 	margin: 0;
-	background-image: url(background.jpg);
+    background-color: antiquewhite;
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
-
-#wrapper {
-	padding: 2em;
+    font-size: 100%;
 }
 
 #header h1 {
-	font-size: 700%;
 	text-transform: uppercase;
-	color: #FFF;
-    margin: 0em;
+	color: white;
 }
 
-#nav {
-    width: 15%;
-    float: left;
-    margin: 0 1em;
+ul#menu {
+    border: 1px solid #000;
+    background-color: cadetblue;
 }
+
+#menu li {
+    color: #fff;
+    border-bottom: 1px solid #216B9A;
+    text-decoration: none;
+}
+
+#menu li {
+    text-align: left;
+    list-style: none;
+}
+
+li a {
+    color: #FFF;
+}
+
+li a:hover {
+    color: #000;
+    font-weight: bold;
+}
+
+li a:active {
+    color: red;
+    font-weight: bold;
+}
+
+li a:focus:hover {
+    color: #DA622E;
+}
+
+li a:focus {
+    border: 1px solid red;
+}
+
+a {
+    text-decoration: none;
+    color: #DA622E;
+}
+
 
 #nav h2 {
-    text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
     color: #111;
 }
 
 #main {
-	width: 40%;
-	padding: 1em;
-	background-color: #FFF;
+	width: 100%;
+    background-color: #FFF;
     float: left;
 }
 
 #aside {
-	width: 15%;
-	float: left;
-	margin: 0 0 0 1em;
 	background-color: #999;
-    padding: 1em;
 }
 
-ul#menu {
-	padding: 0;
-	border: 1px solid #000;
-	background-color: #DA622E;
-}
-#menu li {
-	text-align: center;
-	color: #fff;
-	padding: 10px 0 10px 20px;
-	border-bottom: 1px solid #216B9A;
-}
-#menu li {
-	text-align: left;
-	list-style: none;
-}
-li a {
-	color: #FFF;
-}
-li a:hover, li a:hover {
-	color: #000;
+#aside p{
+    color:white;
 }
 
-/*li a:visited {
-    color: grey;
-}*/
 
-a {
-	text-decoration: none;
-	color: #DA622E;
-}
-a:hover, a:focus {
-	color: #09F;
-}
-
-h1 {
-	margin-top: 0;
+/*Image fluid desing solution*/
+p img {
+    max-width: 100%;
 }
 
 h2 {
-	font-size: 100%;
-	margin-top: 0;
     font-weight: bold;
+    margin: 0;
 }
 
 section h2 {
@@ -95,47 +93,12 @@ section h2 {
 
 .boldTitle {
     font-weight: bold;
-    padding-right: 2em;
 }
 
 #noColor{
     background-color: #FFF;
 }
 
-td, th {
-    background-color: #EEEEEE;
-    padding-left: 1em;
-}
-
-fieldset {
-    padding: 2em;
-}
-
-form label, form input, form select, form textarea {
-    display: block;
-    float: left;  
-    margin-bottom: 0.5em;
-}
-
-form label {
-    width: 10em;    
-}
-
-form textarea {
-    width: 20em;
-}
-
-form #message {
-    float: left;
-}
-
-#promo {
-    float: left;
-}
-
-#linkHide {
-    float: right;
-} 
 
 article, aside, footer, header, hgroup, main, nav, section {
     display: block;
@@ -155,3 +118,77 @@ dl {
     float: left;
     width: 40%;
 }
+
+fieldset {
+    padding: 2em;
+}
+
+/*Form*/
+form label, form input, form select, form textarea {
+    display: block;
+    float: left;  
+    margin-bottom: 0.5em;
+}
+
+form input[type=text], form input[type=email], form textarea {
+    width: 100%;
+}
+
+form label {
+    width: 100%;    
+}
+
+form .dateMonth {
+    width: 40%;
+    
+}
+
+form .dateDay, form .dateYear{
+    width: 30%;
+}
+
+form #message {
+    float: left;
+}
+
+/* End Form*/
+ 
+/*Promo*/
+#promo {
+    float: left;
+    width: 100%;
+}
+
+#linkHide {
+    float: right;
+} 
+
+body {
+    margin: 0 2em;
+}
+
+ header, nav, aside, main {
+    float: left;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    background: antiquewhite url(./panoramica-800.jpg) center no-repeat;
+}
+
+nav, aside {
+    width: 25%;
+}
+
+main {
+    width: 45%;
+    margin:0 1em;
+}
+
+
+
+
+
+
+
