@@ -1,7 +1,7 @@
 /*COMMON*/
 body {
 	margin: 0;
-    background-color: antiquewhite;
+  background-color: antiquewhite;
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -172,13 +172,13 @@ form #message {
         float:left;
     }
 
-    nav, aside, main {
-        margin: 0 0.5em;
+    nav, aside, main, header {
+        margin: 0 0.3em;
     }
 
     header {
         text-align: center;
-        background: antiquewhite url(./panoramica-400.jpg) center no-repeat;
+        background: grey url(./panoramica-400.jpg) center no-repeat;
     }
 
     /*Responsive navigation*/
@@ -253,7 +253,7 @@ form #message {
 
     header {
         text-align: center;
-        background: antiquewhite url(./panoramica-400.jpg) center no-repeat;
+        background: antiquewhite url(./panoramica-600.jpg) center no-repeat;
     }
 
 }
@@ -298,7 +298,7 @@ form #message {
     
     header {
         width: 100%;
-         background: antiquewhite url(./panoramica-600.jpg) center no-repeat;
+         background: antiquewhite url(./panoramica-800.jpg) center no-repeat;
     }
 
     nav, aside {

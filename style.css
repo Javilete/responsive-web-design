@@ -8,6 +8,12 @@ body {
    	font-size: 100%;
 }
 
+#header {
+    width: 100%;
+    text-align: center;
+    background: antiquewhite url(./panoramica-800.jpg) center no-repeat;
+}
+
 #header h1 {
 	text-transform: uppercase;
 	color: white;
@@ -168,21 +174,19 @@ body {
     margin: 0 2em;
 }
 
- header, nav, aside, main {
+body {
+    margin: 0 2em;
+}
+    
+#header, #nav, #aside, #main {
     float: left;
 }
-
-header {
-    width: 100%;
-    text-align: center;
-    background: antiquewhite url(./panoramica-800.jpg) center no-repeat;
-}
-
-nav, aside {
+    
+#nav, #aside {
     width: 25%;
 }
 
-main {
+#main {
     width: 45%;
     margin:0 1em;
 }
